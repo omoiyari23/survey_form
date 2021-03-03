@@ -1,1 +1,85 @@
-<h1 id="titile">Tell me about music</h1>
+<!DOCTYPE html>
+<head>
+<style>
+body {
+  font-family: sans-serif;
+  padding-left: 20%;
+  padding-right: 20%;
+
+}
+label {
+  font-size: 18px;
+  display: block;
+  padding-bottom:  10px;
+}
+input, textarea, select {
+  display: block;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+form {
+  background-color: #6E0AB2;
+  padding: 40px 40px 40px 40px;
+}
+#radio-button-area {
+  float: left;
+  width: 50%;
+  height: 50%;
+
+}
+
+.radio-inline {
+
+}
+</style>
+</head>
+
+<body>
+  <h1 id="titile">Tell me about music</h1>
+  <p id="description">
+      This is a survey where you can tell us about the music you're inspired by
+</p>
+    <form id="survey-from">
+    <label id="name-label>Name</label>
+    <input type="text" name="name" id="name" required> placeholder="First Name"<br>
+    <label id="email-label>Email: </label>
+    <input type="email" name="email" id="email" required placeholder="Best Email"><br>
+    <label id="number-label>Number</label>
+    <input type="number" name="number" id="number" min="0" max="10" required placeholder="$"><br>
+
+  <label id="strain-type-label>strain type</label>
+    <select id="dropdown" name="Cannabis">
+      <option value="gelato">Gelato</option>
+      <option value="og">OG</option>
+      <option value="wedding cake">Wedding cake</option>
+      <option value="granddaddy purple">Granddaddy Purple</option>
+    </select>
+    <label id="additional-comments-label>additonal comments</label>
+    <textarea placeholder="additional comments"></textarea>
+<br>
+<div id="button-area">
+    <label id="gender-label>Gender</label>
+    <input type="radio" id="male" class="radio-inline"name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" class="radio-inline"name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" class="radio-inline"name="gender" value="other">
+    <label for="other">Other</label>
+  </div>
+<br>
+<div id="button-area">
+    <label id="transportation-type-label>transportation typer</label>
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> I have a bike</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> I have a car</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3"> I have a boat</label><br>
+</div>
+
+    <input type="submit" id="submit">
+    </from>
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
