@@ -29,6 +29,31 @@ form {
 
 }
 
+#submit {
+  box-shadow:inset 0px -3px 7px 0px #29bbff;
+ background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+ background-color:#2dabf9;
+ border-radius:3px;
+ /* border:1px solid #0b0e07; */
+ display:inline-block;
+ cursor:pointer;
+ color:#ffffff;
+ font-family:Arial;
+ font-size:15px;
+ padding:9px 23px;
+ text-decoration:none;
+ text-shadow:0px 1px 0px #263666;
+}
+
+#submit:hover {
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color:#0688fa;
+}
+#submit:active {
+	position:relative;
+	top:1px;
+}
+
 .radio-inline {
 
 }
@@ -40,22 +65,22 @@ form {
   <p id="description">
       This is a survey where you can tell us about the music you're inspired by
 </p>
-    <form id="survey-from">
-    <label id="name-label>Name</label>
-    <input type="text" name="name" id="name" required> placeholder="First Name"<br>
-    <label id="email-label>Email: </label>
+    <form id="survey-form">
+    <label id="name-label">Name</label>
+    <input type="text" name="name" id="name" placeholder="First Name"<br>
+    <label id="email-label">Email: </label>
     <input type="email" name="email" id="email" required placeholder="Best Email"><br>
     <label id="number-label>Number</label>
     <input type="number" name="number" id="number" min="0" max="10" required placeholder="$"><br>
 
-  <label id="strain-type-label>strain type</label>
+  <label id="strain-type-label">strain type</label>
     <select id="dropdown" name="Cannabis">
       <option value="gelato">Gelato</option>
       <option value="og">OG</option>
       <option value="wedding cake">Wedding cake</option>
       <option value="granddaddy purple">Granddaddy Purple</option>
     </select>
-    <label id="additional-comments-label>additonal comments</label>
+    <label id="additional-comments-label">additonal comments</label>
     <textarea placeholder="additional comments"></textarea>
 <br>
 <div id="button-area">
@@ -79,7 +104,7 @@ form {
 </div>
 
     <input type="submit" id="submit">
-    </from>
+  </form>
 <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
